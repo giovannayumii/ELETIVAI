@@ -33,6 +33,14 @@
             //echo "Meu nome é: ".$umaVariavel;
             echo "Meu nome é $umaVariavel";
             //echo 'Meu nome é $umaVariavel'; diferença das aspas simples e dupla
+            $total = 30 * 10 / 2 - 4 + 1;
+            echo $total;
+            $total++;
+            $total--;
+            --$total;
+            echo $total;
+
+            //Qual a diferença de colocar um incremento antes ou depois?
 
             
         ?>
