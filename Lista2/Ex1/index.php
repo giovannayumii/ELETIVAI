@@ -13,8 +13,30 @@
   
   <body class ="container">
     <h1>Lista 2 - exercicio 1</h1>
-    
-    //Faça um programa que receba o valor do quilo de um produto e a quantidade de quilos do produto consumida, calculando o valor final a ser pago.
+    <form action ="resposta.php" method="post"> 
+        <div class ="row">
+            <?php
+            for ($i=1; $i<=10; $i++){
+            ?>
+            <div class ="col">
+                <label for ="valor<? $i ?>" class= "label-control">
+                    Informe o valor <?=$i?>
+                </label>
+                <input type = "number" name="valor<?=$i ?>" id="valor<?=$i ?>"
+                    class = "form-control"/>
+
+            </div>
+            <?php
+            }
+            ?>
+        </div>
+        <div class = "row">
+            <div class = "col">
+                <button class = "btn btn-primary"> Enviar </button>
+            </div>
+        </div>
+
+  
 
     <!-- Optional JavaScript; choose one of the two! -->
 

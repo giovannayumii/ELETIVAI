@@ -8,13 +8,36 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Lista 2 index</title>
+    <title>Resposta Exercício 1</title>
   </head>
   
   <body class ="container">
-    <h1>Lista 2 - exercicio 1</h1>
-    
-    //Faça um programa que receba o valor do quilo de um produto e a quantidade de quilos do produto consumida, calculando o valor final a ser pago.
+    <h1>Resposta Exercício 1</h1>
+    <?php
+        for ($i=1; $i<=10; $i++){
+            $vetor[$i] = $_POST["valor$i"];
+        }
+
+        $posicao = 0; 
+        $maior = 0;
+
+        //var_dump($valor);
+
+        foreach($vetor as $chave => $valor){
+            echo "Posição do Vetor: $chave e seu valor é $valor";
+            echo "<br>";
+            if ($valor > $maior){
+                $maior = $valor;
+                $posicao = $chave;            
+            }
+        }
+        echo "<br>";
+        echo " O maior valor é $maior e está na posição $posicao";
+
+    ?>
+
+
+  
 
     <!-- Optional JavaScript; choose one of the two! -->
 
