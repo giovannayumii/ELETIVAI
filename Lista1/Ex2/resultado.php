@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Lista 1 - ex 1 resposta</title>
+    <title>Lista 1 - ex 2 resposta</title>
   </head>
   
   <body class ="container">
@@ -18,7 +18,7 @@
         $valorQuilo = $_POST['valorQuilo'];
         $valorQuantidade = $_POST['valorQuantidade'];
 
-        echo "Valor do quilo é: $valorQuilo, a quantida de quilos é : $valorQuantidade";
+        echo "Valor do quilo é: $valorQuilo, a quantidade de quilos é : $valorQuantidade";
         echo "<br/>";
 
         $valorTotal = $valorQuilo * $valorQuantidade;
