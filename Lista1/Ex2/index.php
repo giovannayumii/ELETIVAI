@@ -7,14 +7,42 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <title>Lista 2 index</title>
+    <title>Lista 1 - ex 2 </title>
   </head>
   
+  
   <body class ="container">
-    <h1>Lista 2 - exercicio 1</h1>
-    
-    //Faça um programa que receba o valor do quilo de um produto e a quantidade de quilos do produto consumida, calculando o valor final a ser pago.
+      
+    <h1>Exemplo de Envio de Formulário</h1>
+
+    <form method = "post" action="resultado.php"> 
+        <div class ="row"> 
+            <div class ="col"> 
+                <label for="valorQuilo" class="label-control">
+                    Informe o valor do quilo:
+                </label>
+                <input type = "number" name = "valorQuilo"
+                    id="valorQuilo" class="form-control"/>
+            </div>
+
+            <div class ="col"> 
+                <label for="valorQuantidade" class="label-control">
+                    Informe a quantidade de quilos:
+                </label>
+                <input type = "number" name = "valorQuantidade"
+                    id="valorQuantidade" class="form-control"/>
+            </div>
+        </div>
+
+        <div class =" row mt-5">
+            <div class = "col">
+                <button type="submit" class = "btn btn-danger">
+                    Enviar
+                </button>
+            </div>
+        </div> 
+    </form>
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 

@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+    <title>Lista 1 - ex1 </title>
   </head>
   
   
@@ -15,22 +15,22 @@
       
     <h1>Exemplo de Envio de Formulário</h1>
 
-    <form method = "post" action="resposta.php"> 
+    <form method = "post" action="resultado.php"> 
         <div class ="row"> 
             <div class ="col"> 
                 <label for="valor1" class="label-control">
-                    Informe o valor 1 :
+                    Informe o valor pago :
                 </label>
-                <input type = "number" name = "valorPago"
-                    id="valorPago" class="form-control"/>
+                <input type = "number" name = "valor1"
+                    id="valor1" class="form-control"/>
             </div>
 
             <div class ="col"> 
-                <label for="valorProduto" class="label-control">
-                    Informe o valor 2 :
+                <label for="valor2" class="label-control">
+                    Informe o valor do produto :
                 </label>
-                <input type = "number" name = "valorProduto"
-                    id="valorProduto" class="form-control"/>
+                <input type = "number" name = "valor2"
+                    id= "valor2" class="form-control"/>
             </div>
         </div>
 
