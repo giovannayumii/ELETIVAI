@@ -14,19 +14,39 @@
     <h1> Lista3 - Resposta2</h1>
 
     <?php
-        
-        for ($i=1; $i<=10; $i++)
+  
+      for ($i=1; $i<=10; $i++)
+      {
+        $ordenado[$i] = $_POST["valor$i"];
+      }
+      
+      echo "<br>";
+      echo "DESORDENADO";
+      echo "<br>";
+
+      foreach ($ordenado as $chave => $valor)
+    
         {
-            $ordenado[$i] = $_POST["$i"];
+          echo "<br>";
+          echo "Posição do Vetor: $chave e seu valor é $valor";
+          echo "<br>";
         }
-        function numOrdenado($ordenado)
+      echo "<br>";
+      echo "ORDENADO";
+      echo "<br>";
+      
+      function numOrdenado($ordenado)
+      {
+        sort($ordenado);
+        foreach ($ordenado as $chave => $valor)
         {
-            sort($ordenado);
-            var_dump($ordenado);
+          echo "<br>";
+          echo "Posição do Vetor: $chave e seu valor é $valor";
+          echo "<br>";
         }
-        
-        numOrdenado($ordenado);
-   
+      }
+      numOrdenado($ordenado);
+  
     ?>
 
     <!-- Optional JavaScript; choose one of the two! -->
