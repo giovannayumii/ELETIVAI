@@ -14,23 +14,39 @@
     <h1>Cálculos</h1>
 
     <?php
-        $valor1 = $_POST['valor1'];
-        $valor2 = $_POST['valor2'];
+      $valor1 = $_POST['valor1'];
+      $valor2 = $_POST['valor2'];
 
-        echo "Valor 1 é: $valor1 e o valor 2 é : $valor2";
-        echo "<br/>";
+      echo "Valor 1 é: $valor1 e o valor 2 é : $valor2";
+      echo "<br/>";
 
-        $maior = " ";
+      $maior = "";
 
-        if ($valor1 > $maior)
+
+      if ($valor1 > $maior)
+      {
+        $maior = $valor1;
+      }
+      if ($valor2 > $maior)
+      {
+        $maior = $valor2;
+      }
+      else
+      {
+        $menor = " ";
+        if ($valor1 < $menor)
         {
-            $maior = $valor1;
+          $menor = $valor1;
         }
-        if ($valor2 > $maior)
+        if ($valor2 < $menor)
         {
-            $maior = $valor2;
+          $menor = $valor2;
         }
-        echo "O maior valor é $maior";
+       echo "O menor valor é: $menor";
+       echo "<br/>";
+      }
+      echo "O maior valor é: $maior";
+      echo "<br/>";
 
     ?>
 

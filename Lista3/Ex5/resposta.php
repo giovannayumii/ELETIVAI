@@ -7,39 +7,51 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <title>Lista 2 - exercicio 5</title>
+    <title>Lista 3 - ex 5 resposta</title>
   </head>
+  
   <body class ="container">
-    <h1> Lista2 - Exercicio5</h1>
+    <h1>Cálculos</h1>
 
-    <form action = "resposta.php" method = "POST">
-        <div class ="row">
-            <?php
-            for ($i=1; $i<=10; $i++)
-            {
-                ?>
-                <div class ="col">
-                    <label for ="valor<? $i ?>" class= "label-control">
-                        Informe o valor <?=$i?>
-                    </label>
-                    <input type = "number" name="valor<?=$i ?>" id="valor<?=$i ?>"
-                        class = "form-control"/>
-                </div>
-            <?php
-            }
-            ?>
-        </div>
+    <?php
+      $valor1 = $_POST['valor1'];
+      $valor2 = $_POST['valor2'];
 
-        <div class = "row mt-5">
-            <div class = "col">
-                <button class = "btn btn-primary"> Enviar </button>
-            </div>
-        </div>
+      echo "A altura é: $valor1 e o peso é : $valor2";
+      echo "<br/>";
 
-    </form>
+      $imc = $valor2/$valor1;
+      
+      echo "O IMC é: $imc";
+      echo "<br/>";
 
-    
+      if( $imc <= "18,5")
+      {
+        echo "Abaixo do peso";
+      }
+      if( $imc >= "18,6" || $imc <= "24,9")
+      {
+        echo "Peso ideal. Parabéns!!!!!";
+      }
+      if( $imc >= "25" || $imc <= "34,9")
+      {
+        echo "Levemente acima do peso";
+      }
+      if( $imc >= "35" || $imc <= "44,9")
+      {
+        echo "Obesidade grau I";
+      }
+      if( $imc >= "45" || $imc <= "54,9")
+      {
+        echo "Obesidade grau II";
+      }
+      if( $imc > "40")
+      {
+        echo "Obesidade III (MORBIDA)";
+      }
+
+
+    ?>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
