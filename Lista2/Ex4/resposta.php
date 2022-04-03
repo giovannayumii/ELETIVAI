@@ -17,18 +17,19 @@
   
       for ($i=1; $i<=3; $i++)
       {
-        $mapaordenado[$i] = $_POST["valor$i"];
-        
+        $mapaordenado[$i] = $_POST["valor$i"]; 
       }
 
+      $nota = 0;
       foreach ($mapaordenado as $chave => $valor)
       {
         echo "<br>";
         echo "Posição do Vetor: $chave e seu valor é: $valor";
         echo "<br>";
-        $soma = $valor + $valor + $valor;
-        $media = $soma / 3;
+        $nota += $valor;
       }
+
+      $media = $nota / 3;
 
       echo "<br>";
       echo " MÉDIA: $media";

@@ -21,7 +21,7 @@
       echo "<br/>";
 
       $maior = "";
-
+      $menor = "";
 
       if ($valor1 > $maior)
       {
@@ -31,23 +31,20 @@
       {
         $maior = $valor2;
       }
-      else
+
+      if ($valor1 < $maior)
       {
-        $menor = " ";
-        if ($valor1 < $menor)
-        {
-          $menor = $valor1;
-        }
-        if ($valor2 < $menor)
-        {
-          $menor = $valor2;
-        }
-       echo "O menor valor é: $menor";
-       echo "<br/>";
+        $menor = $valor1;
       }
+      if ($valor2 < $maior)
+      {
+        $menor = $valor2;
+      }
+ 
       echo "O maior valor é: $maior";
       echo "<br/>";
-
+      echo "O menor valor é: $menor";
+      echo "<br/>";
     ?>
 
     <!-- Optional JavaScript; choose one of the two! -->

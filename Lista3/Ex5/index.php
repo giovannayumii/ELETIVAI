@@ -20,7 +20,7 @@
                 <label for="valor1" class="label-control">
                     Informe a altura:
                 </label>
-                <input type = "number" name = "valor1"
+                <input double = "number" name = "valor1"
                     id="valor1" class="form-control"/>
             </div>
 
