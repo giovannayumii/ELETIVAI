@@ -17,18 +17,18 @@
   
       for ($i=1; $i<=10; $i++)
       {
-        $ordenado[$i] = $_POST["valor$i"];
+        $ordenado[$i] = $_POST["nome$i"];
       }
       
       echo "<br>";
       echo "DESORDENADO";
       echo "<br>";
 
-      foreach ($ordenado as $chave => $valor)
+      foreach ($ordenado as $chave => $nome)
     
         {
           echo "<br>";
-          echo "Posição do Vetor: $chave e seu valor é $valor";
+          echo "Posição do Vetor: $chave e seu valor é $nome";
           echo "<br>";
         }
       echo "<br>";
@@ -38,10 +38,10 @@
       function numOrdenado($ordenado)
       {
         sort($ordenado);
-        foreach ($ordenado as $chave => $valor)
+        foreach ($ordenado as $chave => $nome)
         {
           echo "<br>";
-          echo "Posição do Vetor: $chave e seu valor é $valor";
+          echo "Posição do Vetor: $chave e seu valor é $nome";
           echo "<br>";
         }
       }

@@ -20,33 +20,39 @@
       echo "A altura é: $valor1 e o peso é : $valor2";
       echo "<br/>";
 
-      $imc = $valor2/$valor1;
+      $imc = $valor2 / $valor1;
       
       echo "O IMC é: $imc";
       echo "<br/>";
 
-      if( $imc <= "18,5")
+      if( $imc <= 18.5)
       {
+        echo "<br/>";
         echo "Abaixo do peso";
       }
-      if( $imc >= "18,6" || $imc <= "24,9")
+      if( $imc >= 18.6 && $imc <= 24.9)
       {
+        echo "<br/>";
         echo "Peso ideal. Parabéns!!!!!";
       }
-      if( $imc >= "25" || $imc <= "34,9")
+      if( $imc >= 25 && $imc <= 29.9)
       {
+        echo "<br/>";
         echo "Levemente acima do peso";
       }
-      if( $imc >= "35" || $imc <= "44,9")
+      if( $imc >= 30 && $imc <= 34.9)
       {
+        echo "<br/>";
         echo "Obesidade grau I";
       }
-      if( $imc >= "45" || $imc <= "54,9")
+      if( $imc >= 35 && $imc <= 39.9)
       {
+        echo "<br/>";
         echo "Obesidade grau II";
       }
-      if( $imc > "40")
+      if( $imc > 40)
       {
+        echo "<br/>";
         echo "Obesidade III (MORBIDA)";
       }
 

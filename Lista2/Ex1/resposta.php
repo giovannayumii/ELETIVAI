@@ -14,8 +14,9 @@
   <body class ="container">
     <h1>Resposta Exercício 1</h1>
     <?php
-        for ($i=1; $i<=10; $i++){
-            $vetor[$i] = $_POST["valor$i"];
+        for ($i=1; $i<=10; $i++)
+        {
+          $vetor[$i] = $_POST["valor$i"];
         }
 
         $posicao = 0; 

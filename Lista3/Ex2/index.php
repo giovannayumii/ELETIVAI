@@ -20,10 +20,10 @@
             {
                 ?>
                 <div class ="col">
-                    <label for ="valor<? $i ?>" class= "label-control">
-                        Informe o valor <?=$i?>
+                    <label for ="nome<? $i ?>" class= "label-control">
+                        Informe o nome <?=$i?>
                     </label>
-                    <input type = "number" name="valor<?=$i ?>" id="valor<?=$i ?>"
+                    <input type = "string" name="nome<?=$i ?>" id="nome<?=$i?>"
                         class = "form-control"/>
                 </div>
             <?php
