@@ -34,22 +34,32 @@
           echo "<br>";
         }
       }
-      numOrdenado($ordenado);
 
-      for ($i=1; $i<=10; $i++)
+      function numRepetido($ordenado)
       {
-        $substituir[$i] = $_POST["valor$i"];
-      }
-        if ("valor$i == valor$i")
-        {
-          $valor = "-";
-          echo "<br>";
-          echo "Posição do Vetor: $chave e seu valor é $valor";
-          echo "<br>";
-        }
-        numOrdenado($ordenado);
+        echo "<br>";
+        echo "Valores iguais substituidos por: - ";
+        echo "<br>";
 
-  
+        foreach ($ordenado as $chave => $valor)
+        {
+          $vIgual = 0;
+          for ($i=1; $i<=10; $i++)
+          {
+            if($ordenado[$i] == $valor)
+               $vIgual++;
+          }
+          if ($vIgual >= 2)
+            $ordenado[$chave] = "-";
+            echo "<br>";
+            echo "Valor: $ordenado[$chave]";
+            echo "<br>";
+        }    
+      }
+
+      numOrdenado($ordenado);
+      numRepetido($ordenado);
+
     ?>
 
     <!-- Optional JavaScript; choose one of the two! -->
