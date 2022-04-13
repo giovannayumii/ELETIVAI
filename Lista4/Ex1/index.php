@@ -18,7 +18,7 @@
     <div class="row">
 		<div class="form-group col-5">
 			<label for="num_voltas">Digite o número de voltas</label>
-			<input type="number" class="form-control" id="num_voltas" >
+			<input type="number" class="form-control" id="num_voltas" name="num_voltas" >
 		</div>
     </div>
         <div class = "row mt-3">

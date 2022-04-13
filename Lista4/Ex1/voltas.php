@@ -10,26 +10,33 @@
 
     <title>Lista 4</title>
   </head>
-  <body>
+  <body class ="container">
     <h1>Lista 4 exercicio 1</h1>
     <form action = "resposta.php" method = "POST">
     <div class ="row">
             <?php
-                for ($i=1; $i<=$_POST['num_voltas']; $i++)
+                $num_voltas = $_POST['num_voltas'];
+                $_SESSION['num_voltas'] = $num_voltas;
+                for ($i=1; $i<=$num_voltas ; $i++){
             ?>
+
             <div class ="col">
-                <label for ="valor<? $i ?>" class= "label-control">
-                    Informe o numero de voltas <?=$i?>
+                <label for ="tempo<? $i ?>" class= "label-control">
+                    Informe o tempo da volta: <?=$i?>
                 </label>
-                <input type = "number" name="valor<?=$i ?>" id="valor<?=$i ?>"
+                <input type = "number" name="tempo<?=$i ?>" id="tempo<?=$i?>"
                     class = "form-control"/>
             </div>
+            <?php
+                }
+            ?>
+    </div>
+    <div class = "row mt-3">
+        <div class = "col">
+            <button class = "btn btn-primary"> Enviar </button>
+        </div>
     </div>
     
-
-
-
-
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
