@@ -10,22 +10,25 @@
 
     <title>Lista 4</title>
   </head>
-  <body class ="container">
+  <body>
     <h1>Lista 4 exercicio 1</h1>
-   
-
-    <form action = "voltas.php" method = "POST">
-    <div class="row">
-		<div class="form-group col-5">
-			<label for="num_voltas">Digite o número de voltas</label>
-			<input type="number" class="form-control" id="num_voltas" >
-		</div>
-    </div>
-        <div class = "row mt-3">
-            <div class = "col">
-                <button class = "btn btn-primary"> Enviar </button>
+    <form action = "resposta.php" method = "POST">
+    <div class ="row">
+            <?php
+                for ($i=1; $i<=$_POST['num_voltas']; $i++)
+            ?>
+            <div class ="col">
+                <label for ="valor<? $i ?>" class= "label-control">
+                    Informe o numero de voltas <?=$i?>
+                </label>
+                <input type = "number" name="valor<?=$i ?>" id="valor<?=$i ?>"
+                    class = "form-control"/>
             </div>
-        </div>
+    </div>
+    
+
+
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 
