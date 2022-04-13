@@ -16,9 +16,9 @@
     <h1>Lista 4 exercicio 1</h1>
     <div class="row">
         <?php
-            for ($i = 1; $i <= $num_voltas; $i++)
+            for ($i = 1; $i <= $_SESSION['num_voltas']; $i++)
             {
-             $vetor[$i] = $_POST["tempo$i"];
+                $vetor[$i] = $_POST["valor$i"];
             }
 
             $posicao = 0;
@@ -29,7 +29,8 @@
                 echo "Volta número: $chave e seu tempo é: $tempo";
                 echo "<br>";
 
-                if ($tempo > $maior) {
+                if ($tempo > $maior) 
+                {
                     $maior = $tempo;
                     $posicao = $chave;
                 }
