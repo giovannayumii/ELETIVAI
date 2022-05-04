@@ -1,0 +1,16 @@
+{
+    "name": "aluno/eletiva",
+    "description": "Este  e um exemplo de projeto usando php e sql",
+    "autoload": {
+        "psr-4": {
+            "Aluno\\Eletiva\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "giovannayumii",
+            "email": "100042126+giovannayumii@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
