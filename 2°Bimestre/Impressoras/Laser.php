@@ -14,16 +14,21 @@ class Laser extends Impressora{
         $this->setPeso($peso);
     }
 
-    public function getCapacidadeToner(){
+    public function getCapacidadeToner()
+    {
         return $this->capacidadeToner;
     }
-    public function setCapacidadeToner($capacidadeToner){
+    public function setCapacidadeToner($capacidadeToner)
+    {
         $this->capacidadeToner = $capacidadeToner;
     }
-    public function getFrenteVerso(){
+    public function getFrenteVerso()
+    {
         return $this->imprimeVias;
     }
-    public function setFrenteVerso($frenteVerso){
+    public function setFrenteVerso($frenteVerso)
+    {
         $this->frenteVerso = $frenteVerso;
     }
 }
+?>

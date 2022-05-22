@@ -16,19 +16,23 @@ class Matricial extends Impressora {
         $this->setPeso($peso);
     }
 
-    public function getNumAgulhas(){
+    public function getNumAgulhas()
+    {
         return $this->numAgulhas;
     }
 
-    public function setNumAgulhas($numAgulhas){
+    public function setNumAgulhas($numAgulhas)
+    {
         $this->numAgulhas = $numAgulhas;
     }
 
-    public function getImprimeVias(){
+    public function getImprimeVias()
+    {
         return $this->imprimeVias;
     }
 
-    public function setImprimeVias($imprimeVias){
+    public function setImprimeVias($imprimeVias)
+    {
         $this->imprimeVias = $imprimeVias;
     }
 
