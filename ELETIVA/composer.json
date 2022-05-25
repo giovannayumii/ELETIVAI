@@ -1,5 +1,5 @@
 {
-    "name": "aluno/eletiva",
+    "name": "ELETIVA",
     "description": "Este  e um exemplo de projeto usando php e sql",
     "autoload": {
         "psr-4": {
