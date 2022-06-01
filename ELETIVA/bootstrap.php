@@ -16,9 +16,6 @@
         return "Olá Mundo!";
     });
 
-
-
-
     //ADICIONAR AS ROTAS VALIDAS A CIMA
 
     $result = $router ->handler();

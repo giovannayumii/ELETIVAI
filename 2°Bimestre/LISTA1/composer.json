@@ -1,0 +1,15 @@
+{
+    "name": "gi_yu/lista1",
+    "autoload": {
+        "psr-4": {
+            "GiYu\\Lista1\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "giovannayumii",
+            "email": "100042126+giovannayumii@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
