@@ -1,8 +1,8 @@
 <?php
 
-namespace Aluno\ProjetoPhp\Model\DAO;
+namespace GiYu\Eletiva\Model\DAO;
 
-use Aluno\ProjetoPhp\Model\Entity\Clientes;
+use GiYu\Eletiva\Model\Entity\Clientes;
 
 class ClientesDAO
 {
@@ -17,7 +17,8 @@ class ClientesDAO
             $p -> bindValue(":email", $c->getEmail());
             $p -> bindValue(":idade", $c->getIdade());
             return $p->execute();
-        } catch (\Exception $e) 
+        } 
+        catch (\Exception $e) 
         {
             return false;
         }
@@ -34,7 +35,8 @@ class ClientesDAO
             $p -> bindValue(":idade", $c->getIdade());
             $p -> bindValue(":id", $c->getId());
             return $p->execute();
-        } catch (\Exception $e) 
+        } 
+        catch (\Exception $e) 
         {
             return false;
         }
@@ -42,7 +44,8 @@ class ClientesDAO
 
     public function excluir($id)
     {
-        try {
+        try 
+        {
             $sql = "DELETE FROM `clientes` WHERE id=:id";
             $p = Conexao::conectar()->prepare($sql);
             $p -> bindValue(":id", $id);

@@ -1,8 +1,6 @@
 <?php
 
-
-namespace Aluno\ProjetoPhp\Controller;
-
+namespace GiYu\Eletiva\Controller;
 
 class ExercicioController
 {

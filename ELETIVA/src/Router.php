@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Aluno\Eletiva;
+namespace GiYu\Eletiva;
 
 
 class Router

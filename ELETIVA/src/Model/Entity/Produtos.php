@@ -1,6 +1,6 @@
 <?php 
 
-    namespace Aluno\Eletiva\Model\Entity;
+    namespace GiYu\Eletiva\Model\Entity;
     
     class Produtos
     {

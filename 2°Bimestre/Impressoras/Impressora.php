@@ -1,6 +1,7 @@
 <?php
 
-class Impressora {
+class Impressora 
+{
 
     private $marca;
     private $modelo;

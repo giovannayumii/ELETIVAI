@@ -1,6 +1,7 @@
 <?php
 
-class Laser extends Impressora{
+class Laser extends Impressora
+{
     private $frenteVerso;
     private $capacidadeToner;
 

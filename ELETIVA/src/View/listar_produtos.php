@@ -9,18 +9,18 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Listar Clientes!</title>
+    <title>Listar Produtos!</title>
 </head>
 
 <body>
     <?php require_once "barra_navegacao.php"; ?>
     <div class="container">
-        <h1>Listar Clientes!</h1>
+        <h1>Listar Produtos!</h1>
         <?php
-        if (isset($resposta)) {
-            if ($resposta) {
-                echo
-                '<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        if (isset($resposta)){
+            if($resposta){
+                echo 
+                    '<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
                     <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
                     </symbol>
@@ -40,9 +40,9 @@
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                      </div>';
-            } else {
-                echo
-                '<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            }else{
+                echo 
+                    '<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
                     <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
                     </symbol>
@@ -62,17 +62,17 @@
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                     </div>';
-            }
+                }
         }
         ?>
-
+        
         <table class="table table-hover">
             <thead>
                 <tr>
                     <th scope="col">#</th>
                     <th scope="col">Nome</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Idade</th>
+                    <th scope="col">Descrição</th>
+                    <th scope="col">Valor</th>
                     <th scope="col">Ações</th>
                 </tr>
             </thead>
@@ -81,10 +81,10 @@
                     <tr>
                         <th scope="row"><?= $linha['id'] ?></th>
                         <td><?= $linha['nome'] ?></td>
-                        <td><?= $linha['email'] ?></td>
-                        <td><?= $linha['idade'] ?></td>
-                        <td> <a href="/cliente/alterar/<?= $linha['id'] ?>" class="btn btn-warning">Alterar</a>
-                            <a href="/cliente/excluir/<?= $linha['id'] ?>" class="btn btn-danger">Excluir</a>
+                        <td><?= $linha['descricao'] ?></td>
+                        <td><?= $linha['valor'] ?></td>
+                        <td> <a href="/produto/alterar/<?= $linha['id'] ?>" class="btn btn-warning">Alterar</a>
+                            <a href="/produto/excluir/<?= $linha['id'] ?>" class="btn btn-danger">Excluir</a>
                         </td>
                     </tr>
                 <?php } ?>
